@@ -1,0 +1,52 @@
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    background-color: black;
+    overflow:hidden;
+    position: sticky;
+   
+}
+li{
+    display:inline-block;
+    padding:0
+    
+   
+}
+a{
+    text-decoration:none;
+    color:white;
+    padding:20px 30px;
+    display:block;
+    font-size:18px;
+    
+   
+}
+a:hover{
+    background-color:aquamarine;
+    background:url()
+}
+.project-list{
+    background-color: beige;
+    
+}
+.project-list li{
+    display:grid;
+    padding:10px;
+
+}
+#contact{
+    background-color:aquamarine;
+    padding:5px;
+}
+#contact a {
+    display: inline;
+    color:blue;
+    padding:3px
+}

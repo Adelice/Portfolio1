@@ -1,1 +1,2 @@
-const a=12
+var number= 12
+console.log(number)
