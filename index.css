@@ -1,52 +1,209 @@
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    margin:0;
-    padding:0
-}
-ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    background-color: black;
-    overflow:hidden;
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  #main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     position: sticky;
-   
-}
-li{
-    display:inline-block;
-    padding:0
-    
-   
-}
-a{
-    text-decoration:none;
-    color:white;
-    padding:20px 30px;
-    display:block;
-    font-size:18px;
-    
-   
-}
-a:hover{
-    background-color:aquamarine;
-    background:url()
-}
-.project-list{
-    background-color: beige;
-    
-}
-.project-list li{
-    display:grid;
-    padding:10px;
-
-}
-#contact{
-    background-color:aquamarine;
-    padding:5px;
-}
-#contact a {
-    display: inline;
-    color:blue;
-    padding:3px
-}
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Flexbox for alignment */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* About Section Styles */
+  #about {
+    padding: 50px 0;
+  }
+  
+  #about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 40px;
+  }
+  
+  .about-content p {
+    flex: 1;
+    line-height: 1.6;
+  }
+  
+  /* Portfolio Section Styles */
+  #portfolio {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  #portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .portfolio-item {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .portfolio-item h3 {
+    margin-top: 15px;
+  }
+  
+  .portfolio-item p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    padding: 50px 0;
+  }
+  
+  #contact h2, #contact p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* Adjust container width */
+    .container {
+      width: 90%;
+    }
+  
+    /* Stack navigation items vertically */
+    .nav-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-item {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    /* About Section */
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    /* Portfolio Items */
+    .portfolio-item {
+      width: 100%;
+    }
+  }
+  

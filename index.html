@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <style>
-       
-    </style>
-    <link>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <ul>
-        <li><a href="#"> Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
 
-    </ul>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello!I am a passionate developer learning how to build websites.I enjoy learning new technologies and improving my skills in web development. </p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul class="project-list">
-            <li>Project 1 : Simple HTML Website</li>
-            <li>Project 2: A Javascript Game </li>
-
+  <!-- Header Section -->
+  <header id="main-header">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav id="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Reach me at:<a href="mailto:nancy@gmail.com">nancy@gmail.com</a></p> 
+      </nav>
+    </div>
+  </header>
 
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="images/pic1.jpg" alt="Profile Picture" class="profile-pic">
+        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I enjoy turning complex problems into simple, elegant solutions.</p>
+      </div>
+    </div>
+  </section>
 
-    </section>
-   
- 
- 
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>My Work</h2>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <img src="images/project1.jpg" alt="Project 1" class="project-img">
+          <h3>Project One</h3>
+          <p>A brief description of Project One.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/project2.jpg" alt="Project 2" class="project-img">
+          <h3>Project Two</h3>
+          <p>A brief description of Project Two.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/project3.jpg" alt="Project 3" class="project-img">
+          <h3>Project Three</h3>
+          <p>A brief description of Project Three.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, please fill out the form below.</p>
+      <form action="#" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
